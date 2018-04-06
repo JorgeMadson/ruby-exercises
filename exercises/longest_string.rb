@@ -25,4 +25,6 @@ if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
   p longest_string(['longa_string', 'stringie', 'str']) == 'longa_string'
+  p longest_string(["a", "zzzz", "c"]) == "zzzz"
+  p longest_string(["a", "b", "c"]) == 'a' #Já que são todas do mesmo tamanho ele retorna a primeira
 end
